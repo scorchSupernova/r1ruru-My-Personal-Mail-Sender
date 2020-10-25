@@ -32,8 +32,8 @@ def email(to,content):
     ser=smtplib.SMTP('smtp.gmail.com', 587)
     ser.ehlo()
     ser.starttls()
-    ser.login('rahmansaidur970@gmail.com', 'attohottasajol')
-    ser.sendmail('rahmansaidur970@gmail.com', to, content)
+    ser.login('Sender Email Address', 'Sender password')
+    ser.sendmail('Sender Email Address', to, content)
     ser.close()
 
 def mailer():
